@@ -1,0 +1,15 @@
+{
+  "name": "ai_devs-website-vercel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PiotrekNie/ai_devs-website-vercel.git",
+  "author": "Piotr Niemirski <pniemirski@eversis.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/tiktokenizer": "^1.0.9",
+    "ai": "^3.3.7",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "openai": "^4.79.1"
+  }
+}
