@@ -28,9 +28,11 @@ app.post('/api/chat', async (req, res) => {
   }
 
   const completion = await AiCompletion(instruction);
+  const completionJson = JSON.parse(completion);
 
   res.status(200).json({
-    completion: JSON.parse(completion),
+    completion: completionJson,
+    description: completionJson?.description || '',
     instruction: instruction,
     success: true,
   });
